@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ej6_SistemaPeaje
+namespace Ejercicio3
 {
     public partial class FormRegistroResumenPeaje : Form
     {

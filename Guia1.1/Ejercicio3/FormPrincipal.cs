@@ -1,15 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ej6_SistemaPeaje
+namespace Ejercicio3
 {
     public partial class FormPrincipal : Form
     {
@@ -32,7 +24,7 @@ namespace Ej6_SistemaPeaje
             if (cargaResumen.ShowDialog() == DialogResult.OK)
             {
                 int dia = Convert.ToInt32(cargaResumen.nudDia.Value);
-                int cantidadVehiculos = Convert.ToInt32(cargaResumen.nudDia.Value);
+                int cantidadVehiculos = Convert.ToInt32(cargaResumen.tbCantidadAutos.Text);
 
                 peaje.RegistrarResumenDia(dia, cantidadVehiculos);
             }

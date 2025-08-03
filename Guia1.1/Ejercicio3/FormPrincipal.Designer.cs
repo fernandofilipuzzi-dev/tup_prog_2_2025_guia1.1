@@ -1,5 +1,5 @@
 ﻿
-namespace Ej6_SistemaPeaje
+namespace Ejercicio3
 {
     partial class FormPrincipal
     {
