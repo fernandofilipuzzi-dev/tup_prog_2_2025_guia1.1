@@ -8,13 +8,20 @@ namespace Ej6_SistemaPeaje
 {
     class Peaje
     {
-        int[] Cantidades;
+        int[] cantidades;
 
         public Peaje()
         {
-            Cantidades = new int[31];
+            cantidades = new int[31];
             for (int n = 0; n < 31; n++)
-                Cantidades[n] = 0;
+                cantidades[n] = 0;
+        }
+
+        public int VerCantidadAutosEnUnDia(int dia)
+        {
+            if(dia>=1 && dia<=31)
+                return cantidades[dia - 1];
+            return -1;
         }
 
         public double PromCantVehiculosDelMes
@@ -23,17 +30,18 @@ namespace Ej6_SistemaPeaje
             {
                 int acum = 0;
                 for (int n = 0; n < 31; n++)
-                    acum += Cantidades[n];
+                    acum += cantidades[n];
                 return acum / 31d;
             }
         }
 
         public void RegistrarResumenDia(int dia, int cantidadVehiculos)
         {
-            Cantidades[dia-1] = cantidadVehiculos;//indice=dia-1!
+            if (dia >= 1 && dia <= 31)
+                cantidades[dia-1] = cantidadVehiculos;//indice=dia-1!            
         }
 
-        public int[] LosDiasMayoresAlPromedio(out int cant)
+        public int[] CalcularLosDiasMayoresAlPromedio(out int cant)
         {
             cant = 0;
             double promedio = PromCantVehiculosDelMes;
@@ -41,7 +49,7 @@ namespace Ej6_SistemaPeaje
             int[] dias = new int[31];
             for (int n = 0; n < 31; n++)
             {
-                if (Cantidades[n] > promedio)
+                if (cantidades[n] > promedio)
                 {
                     dias[cant++] = n + 1;//día!
                 }
@@ -50,16 +58,16 @@ namespace Ej6_SistemaPeaje
             return dias;
         }
 
-        public int TercioDelMesMayor()
+        public int CalcularTercioDelMesMayor()
         {
             int[] periodos = new int[] { 0,0,0};
 
             #region determino la cantidad de vehículos por cada periodo
             for (int n = 0; n < 31; n++)
             {
-                if (n < 10) periodos[0] += Cantidades[n];
-                else if (n < 20) periodos[1] += Cantidades[n];
-                else periodos[2] += Cantidades[n];                
+                if (n < 10) periodos[0] += cantidades[n];
+                else if (n < 20) periodos[1] += cantidades[n];
+                else periodos[2] += cantidades[n];                
             }
             #endregion
 

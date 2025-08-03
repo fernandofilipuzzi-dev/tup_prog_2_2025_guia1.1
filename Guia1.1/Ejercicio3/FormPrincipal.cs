@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -37,8 +38,23 @@ namespace Ej6_SistemaPeaje
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnVer_Click(object sender, EventArgs e)
         {
+            lbVer.Items.Clear();
+
+            lbVer.Items.Add("Los días en que ingresaron más autos que el promedio en el mes:");
+            int[] dias=peaje.CalcularLosDiasMayoresAlPromedio(out int cantDias);
+
+            for (int n = 0; n < cantDias; n++)
+            {
+                lbVer.Items.Add($"{dias[n]} (cantidad: {peaje.VerCantidadAutosEnUnDia(dias[n])})");
+            }
+
+            lbVer.Items.Add("Cuál de los tercios del mes tuvo mayor movimiento?");
+            int tercio = peaje.CalcularTercioDelMesMayor();
+            
+            lbVer.Items.Add(tercio);
+            
 
         }
     }

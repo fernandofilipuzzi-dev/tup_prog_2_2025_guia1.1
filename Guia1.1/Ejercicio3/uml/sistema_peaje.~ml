@@ -59,7 +59,7 @@
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">200</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">136</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">300</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">273</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">121</XPD:ATTR>
 <XPD:REF name="Model">ROwGVztBg023hJarsbP6HAAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="tliI4RnU5kWImzmVkETkOQAA">
@@ -112,41 +112,36 @@
 <XPD:REF name="BehavioralFeature">KgGWB7vZxEWapjVnDuczlAAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
-<XPD:OBJ name="Operations[1]" type="UMLOperation" guid="S7SmHOxiKEGqIveIVyOjyQAA">
-<XPD:ATTR name="Name" type="string">VerCantidadAutosEnUnDia</XPD:ATTR>
+<XPD:OBJ name="Operations[1]" type="UMLOperation" guid="zsHV+435OEapDQ5jO2FW9wAA">
+<XPD:ATTR name="Name" type="string">MayorMovimiento</XPD:ATTR>
 <XPD:REF name="Owner">ROwGVztBg023hJarsbP6HAAA</XPD:REF>
-<XPD:ATTR name="#Parameters" type="integer">2</XPD:ATTR>
-<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="PHeXmxOWV0e1s03rGIvIzgAA">
+<XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="AFYumrzAfUyKHoYQk2qUvAAA">
 <XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
 <XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
-<XPD:REF name="BehavioralFeature">S7SmHOxiKEGqIveIVyOjyQAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="gX+kSdDdwEusYZgXPy1UCwAA">
-<XPD:ATTR name="Name" type="string">dia</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
-<XPD:REF name="BehavioralFeature">S7SmHOxiKEGqIveIVyOjyQAA</XPD:REF>
+<XPD:REF name="BehavioralFeature">zsHV+435OEapDQ5jO2FW9wAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="Operations[2]" type="UMLOperation" guid="42yoNLi9rEWqYJPZKgcMcAAA">
-<XPD:ATTR name="Name" type="string">CalcularLosDiasMayoresAlPromedio</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">LosDiasMayoresAlPromedio</XPD:ATTR>
 <XPD:REF name="Owner">ROwGVztBg023hJarsbP6HAAA</XPD:REF>
 <XPD:ATTR name="#Parameters" type="integer">2</XPD:ATTR>
-<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="lXVprZppjke3bPINCKgEsQAA">
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="ZticppyNcUOdu8PJUPfriQAA">
 <XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
 <XPD:ATTR name="TypeExpression" type="string">int[]</XPD:ATTR>
 <XPD:REF name="BehavioralFeature">42yoNLi9rEWqYJPZKgcMcAAA</XPD:REF>
 </XPD:OBJ>
-<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="7Wv6P2J9wUqRCh8aC9edLwAA">
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="j40iEQfm+k69v+lNA11Q7QAA">
 <XPD:ATTR name="Name" type="string">cantDias</XPD:ATTR>
 <XPD:ATTR name="TypeExpression" type="string">int out</XPD:ATTR>
 <XPD:REF name="BehavioralFeature">42yoNLi9rEWqYJPZKgcMcAAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="Operations[3]" type="UMLOperation" guid="UD9QPR8uQEOtFcp/PUgbHwAA">
-<XPD:ATTR name="Name" type="string">CalcularTercioDelMesMayor</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">TercioDelMesMayor</XPD:ATTR>
 <XPD:REF name="Owner">ROwGVztBg023hJarsbP6HAAA</XPD:REF>
 <XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
-<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="9HhkO5btY0ivnUBwdXenkgAA">
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="PQpZj2sAa0CKfxxjXAKHRAAA">
 <XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
 <XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
 <XPD:REF name="BehavioralFeature">UD9QPR8uQEOtFcp/PUgbHwAA</XPD:REF>
@@ -157,14 +152,11 @@
 <XPD:ATTR name="#Attributes" type="integer">2</XPD:ATTR>
 <XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="BmqhCqlfF0KfYfLgkYUGVwAA">
 <XPD:ATTR name="Name" type="string">PromCantVehiculosDelMes</XPD:ATTR>
-<XPD:ATTR name="StereotypeName" type="string">readonly</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">double</XPD:ATTR>
 <XPD:REF name="Owner">ROwGVztBg023hJarsbP6HAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Attributes[1]" type="UMLAttribute" guid="TCzNB2aLpk+kfqxCAykmZQAA">
-<XPD:ATTR name="Name" type="string">cantidades</XPD:ATTR>
-<XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">int[]//cada indice es un dia</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">Cantidades</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int[]</XPD:ATTR>
 <XPD:REF name="Owner">ROwGVztBg023hJarsbP6HAAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>

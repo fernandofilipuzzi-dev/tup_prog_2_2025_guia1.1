@@ -30,8 +30,8 @@ namespace Ej6_SistemaPeaje
         private void InitializeComponent()
         {
             this.btnRegistrarPeaje = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.btnVer = new System.Windows.Forms.Button();
+            this.lbVer = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnRegistrarPeaje
@@ -45,34 +45,34 @@ namespace Ej6_SistemaPeaje
             this.btnRegistrarPeaje.UseVisualStyleBackColor = true;
             this.btnRegistrarPeaje.Click += new System.EventHandler(this.btnRegistrarPeaje_Click);
             // 
-            // button1
+            // btnVer
             // 
-            this.button1.Location = new System.Drawing.Point(589, 113);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(177, 61);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Ver Resumen";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnVer.Location = new System.Drawing.Point(589, 113);
+            this.btnVer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnVer.Name = "btnVer";
+            this.btnVer.Size = new System.Drawing.Size(177, 61);
+            this.btnVer.TabIndex = 1;
+            this.btnVer.Text = "Ver Resumen";
+            this.btnVer.UseVisualStyleBackColor = true;
+            this.btnVer.Click += new System.EventHandler(this.btnVer_Click);
             // 
-            // listBox1
+            // lbVer
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(18, 40);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(563, 424);
-            this.listBox1.TabIndex = 2;
+            this.lbVer.FormattingEnabled = true;
+            this.lbVer.ItemHeight = 20;
+            this.lbVer.Location = new System.Drawing.Point(18, 40);
+            this.lbVer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lbVer.Name = "lbVer";
+            this.lbVer.Size = new System.Drawing.Size(563, 424);
+            this.lbVer.TabIndex = 2;
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 475);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lbVer);
+            this.Controls.Add(this.btnVer);
             this.Controls.Add(this.btnRegistrarPeaje);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -87,8 +87,8 @@ namespace Ej6_SistemaPeaje
         #endregion
 
         private System.Windows.Forms.Button btnRegistrarPeaje;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button btnVer;
+        private System.Windows.Forms.ListBox lbVer;
     }
 }
 

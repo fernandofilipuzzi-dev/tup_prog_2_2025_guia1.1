@@ -37,16 +37,16 @@
             // 
             this.lbxResultados.FormattingEnabled = true;
             this.lbxResultados.ItemHeight = 20;
-            this.lbxResultados.Location = new System.Drawing.Point(20, 49);
+            this.lbxResultados.Location = new System.Drawing.Point(9, 45);
             this.lbxResultados.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.lbxResultados.Name = "lbxResultados";
-            this.lbxResultados.Size = new System.Drawing.Size(485, 64);
+            this.lbxResultados.Size = new System.Drawing.Size(485, 124);
             this.lbxResultados.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 14);
+            this.label3.Location = new System.Drawing.Point(5, 17);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 20);
@@ -56,7 +56,7 @@
             // button1
             // 
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.Location = new System.Drawing.Point(218, 115);
+            this.button1.Location = new System.Drawing.Point(206, 185);
             this.button1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 44);
@@ -68,7 +68,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(509, 176);
+            this.ClientSize = new System.Drawing.Size(504, 237);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbxResultados);
@@ -76,6 +76,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormVer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Ver Resultados";
             this.ResumeLayout(false);
             this.PerformLayout();
