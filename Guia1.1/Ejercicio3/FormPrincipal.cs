@@ -50,7 +50,7 @@ namespace Ej6_SistemaPeaje
                 lbVer.Items.Add($"{dias[n]} (cantidad: {peaje.VerCantidadAutosEnUnDia(dias[n])})");
             }
 
-            lbVer.Items.Add("Cuál de los tercios del mes tuvo mayor movimiento?");
+            lbVer.Items.Add("¿Cuál de los tercios del mes tuvo mayor movimiento?");
             int tercio = peaje.CalcularTercioDelMesMayor();
             
             lbVer.Items.Add(tercio);
